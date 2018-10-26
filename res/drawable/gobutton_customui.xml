@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <corners
+                android:bottomLeftRadius="15dip"
+                android:bottomRightRadius="15dip"
+                android:topLeftRadius="15dip"
+                android:topRightRadius="15dip" />
+
+            <padding
+                android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp" />
+
+            <stroke
+                android:width="2px"
+                android:color="#808080" />
+
+            <solid android:color="#E5E4E2" >
+            </solid>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/go_button" />
+    </item>
+
+</layer-list>
+

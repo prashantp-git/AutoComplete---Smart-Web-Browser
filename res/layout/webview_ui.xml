@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/webview_ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </WebView>
+
+    <EditText
+        android:id="@+id/webAddrEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="10dp"
+        android:alpha="1"
+        android:background="@drawable/urlbar_customui"
+        android:focusable="true"
+        android:hint="@string/urleditbox_hint"
+        android:inputType="textUri"
+        android:textColorHint="#808080" >
+    </EditText>
+
+    <Button
+        android:id="@+id/searchButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:alpha="0.75"
+        android:background="@drawable/searchbutton_customui" />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignRight="@+id/webAddrEditText"
+        android:layout_alignTop="@+id/webAddrEditText"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/close_button" />
+
+    <Button
+        android:id="@+id/goButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.75"
+        android:background="@drawable/gobutton_customui" />
+
+    <ImageView
+        android:id="@+id/progressIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.85"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/progress_icon" />
+
+</RelativeLayout>

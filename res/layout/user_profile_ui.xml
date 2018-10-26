@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@drawable/user_profile_background">
+
+        <TextView
+            android:id="@+id/userprofileTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            
+            android:text="My Profile"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RelativeLayout
+            android:id="@+id/innerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userprofileTextView"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#50666633"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fnameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="First Name" />
+
+           <EditText
+               android:id="@+id/fnameEdittext"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/fnameTextView"
+               android:layout_marginLeft="12dp"
+               android:textColor="#333333"
+               android:background="@drawable/userprofile_editbox_customui"
+               android:ems="10" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/lnameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fnameEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Last Name"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/lnameEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnameTextView"
+                android:layout_marginLeft="12dp"
+                android:textColor="#333333"
+                android:background="@drawable/userprofile_editbox_customui"                
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnameEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Email Address"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/emailEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTextView"
+                android:layout_marginLeft="12dp"
+                android:textColor="#333333"
+                android:background="@drawable/userprofile_editbox_customui"
+                android:ems="12"
+                android:inputType="textEmailAddress" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/emailegtextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dip"
+                android:text="e.g. myname@example.com"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#4f4f4f"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/usrnameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailegtextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Username"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/usrnameEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usrnameTextView"
+                android:textColor="#333333"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/userprofile_editbox_customui"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/passwordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usrnameEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Password"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/passwordEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordTextView"
+                android:textColor="#333333"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/userprofile_editbox_customui"
+                android:ems="10"
+                android:inputType="textVisiblePassword" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/bdayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Birthday"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/bdayEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bdayTextView"
+                android:textColor="#333333"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/userprofile_editbox_customui"
+                android:ems="10"
+                android:inputType="date" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/bdayegtextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bdayEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dip"
+                android:text="e.g. DD/MM/YYYY"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#4f4f4f"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/genderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bdayegtextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Gender"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genderTextView"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="Male"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genderTextView"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="2dp"
+                android:text="Female"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maleRadioButton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="City"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/cityEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityTextView"
+                android:textColor="#333333"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/userprofile_editbox_customui"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/countryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Country"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/countryEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/countryTextView"
+                android:textColor="#333333"
+                android:background="@drawable/userprofile_editbox_customui"
+                android:layout_marginLeft="12dp"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/phonenoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/countryEdittext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="Phone Number"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/phonenoEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phonenoTextView"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="#333333"
+                android:inputType="phone"
+                android:background="@drawable/userprofile_editbox_customui"
+                android:ems="10" >
+            </EditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_below="@+id/innerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/userprofile_button_customui"
+            android:textColor="#ffffff"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+</ScrollView>
