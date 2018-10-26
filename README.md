@@ -1,15 +1,5 @@
-/*------------------------------------------------------------------------------------
- *                    AUTOCOMPLETE - SMART WEB BROWSER				DATE - 18/09/2015 
- *------------------------------------------------------------------------------------							
- * THIS IS AN ANDROID PROJECT TO CREATE A WEB APP WHICH FILLS THE USER'S INFORMATION
- * AUTOMATICALLY. INPUT FIELDS ARE AUTOMATICALLY FILLED BASED ON USER'S SAVED PROFILE.
- * THIS APP MAKES USE OF ANDROID.WEBKIT.WEBVIEW CLASS TO EMBED BROWSER INTO THE APP.
- * JAVASCRIPT IS USED TO PARSE THE WEB PAGE (DOCUMENT), IDENTIFY THE INPUT FIELDS AND  
- * THEN INJECT USER'S INFORMATION INTO THEM ACCORDINGLY. USER ENTERS HIS/HER PROFILE AT
- * LAUNCH, WHICH IS SAVED IN A FILE ON EXTERNAL STORAGE. THIS FILE IS USED AS USER'S 
- * DATABASE.
- * 
- * 
- * PROJECT DONE BY - PRASHANT PARDESHI 
- *
- */
+# AUTOCOMPLETE - SMART WEB BROWSER
+
+This is an android application that performs profile translation based proactive adaptation using context management. It automatically generates user’s profile according to the scenarios based on context. 
+This app makes use of android.webkit.webview class to embed browser into the app. JavaScript is used to parse the web page (document), identify the input fields and then inject user's information into them accordingly. User enters his/her profile at launch, which is saved in a file on external storage. This file is used as user's database.
+
