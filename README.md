@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------------------
- *                    #AUTOCOMPLETE - SMART WEB BROWSER				DATE - 18/09/2015 
+ *                    AUTOCOMPLETE - SMART WEB BROWSER				DATE - 18/09/2015 
  *------------------------------------------------------------------------------------							
  * THIS IS AN ANDROID PROJECT TO CREATE A WEB APP WHICH FILLS THE USER'S INFORMATION
  * AUTOMATICALLY. INPUT FIELDS ARE AUTOMATICALLY FILLED BASED ON USER'S SAVED PROFILE.
